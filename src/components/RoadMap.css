@@ -1,0 +1,22 @@
+.breadcrumb {
+    margin-top: 50px;
+    margin-left: 140px;
+    width: 400px;
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.breadcrumb-item,
+.breadcrumb-last {
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+    }
+
+.breadcrumb-item{
+    opacity: 0.5;
+}
