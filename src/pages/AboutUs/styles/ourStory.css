@@ -1,0 +1,92 @@
+.about-us {
+    margin-top: 30px;
+     margin-left: 135px;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 280px;
+ }
+
+ .about-us-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 40px;
+ }
+
+ .Our-story {
+     width: 277px;
+     height: 64px;
+     font-family: 'Inter';
+     font-weight: 600;
+     font-size: 54px;
+     line-height: 64px;
+
+ }
+
+ .Our-story-content {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 24px;
+ }
+
+ .story-content {
+     font-family: 'Poppins';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 26px;
+     
+     color: #000;
+ }
+
+
+ .about-image {
+     width: 705px;
+     height: 609px;
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1300px) {
+
+    .about-us {
+        margin-left: 50px;
+        gap: 150px;
+    }
+    .about-image {
+        width: 500px;
+        height: 432px;
+    }
+
+    .about-image img{
+        width: 500px;
+        height: 432px;
+    }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .about-us{
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 10px;
+    }
+    
+ }
+
+ @media screen and (min-width:320px) and (max-width: 767px) {
+.about-us{
+    margin-left: 5px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+    
+.about-image,
+.about-image img {
+    width: 300px;
+    height: auto;
+}
+
+}
+ 

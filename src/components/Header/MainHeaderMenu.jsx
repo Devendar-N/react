@@ -4,7 +4,7 @@ import {
     WishListIcon,
     UserIcon,
     CartIcon
-} from "@images/images";
+} from "@images/index.js";
 import { useState } from "react";
 import {Link} from "react-router-dom";
 

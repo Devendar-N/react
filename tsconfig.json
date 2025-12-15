@@ -16,9 +16,8 @@
       "baseUrl": ".",
       "paths": {
         "@components/*": ["src/components/*"],
-        "@images": ["src/images"],
-        "@Productcss/*" : ["src/pages/ProductDetails/cssFile/*"],
-        "@pages": ["src/pages"]
+        "@images": ["src/assets"],
+        "@pages": ["src/pages"],
       }
     },
     "include": ["src"],

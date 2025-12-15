@@ -1,7 +1,6 @@
 import "./Header.css";
 
 const MainHeaderUtilityBar = () => {
-  // js code
 
   return (
     <div>

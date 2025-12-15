@@ -8,7 +8,7 @@ import {
   LinkedinIcon,
   SendIcon,
   CopyrightIcon
-} from "@images/images"
+} from "@images/index.js"
 
 import { FooterContent} from "@components"
 import "./Footer.css";
