@@ -109,7 +109,7 @@ export const ProductReturn = () => {
   );
 };
 
-const ProductDiscriptionContainer = () => {
+export const ProductDiscriptionContainer = () => {
   return (
     <div className="product-discription-container">
       <ProductDiscription />
@@ -119,4 +119,3 @@ const ProductDiscriptionContainer = () => {
   );
 };
 
-export default ProductDiscriptionContainer;

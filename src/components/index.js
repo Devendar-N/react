@@ -8,10 +8,10 @@ export { default as ProductDetailsPage } from "../pages/ProductDetails/ProductDe
 export { default as ProductDetailsAndImages } from "../pages/ProductDetails/ProductDetailHelpers/ProductDetailsAndImages.jsx";
 export { default as AboutUs } from "../pages/AboutUs/AboutUsHelpers/AboutUs.jsx";
 export * from "../pages/ProductDetails/ProductDetailHelpers/PageImageComponents.jsx"; //access all ImageCard component
-export { default as ProductDiscriptionContainer } from "../pages/ProductDetails/ProductDetailHelpers/ProductDiscriptionContainer.jsx";
+export {ProductDiscriptionContainer} from "../pages/ProductDetails/ProductDetailHelpers/ProductDiscriptionContainer.jsx";
 export * from "../pages/ProductDetails/ProductDetailHelpers/ProductDiscriptionContainer.jsx"; //access all components
 export *  from "../pages/ProductDetails/ProductDetailHelpers/RelatedProduct.jsx";
-export {default as OurStory} from "../pages/AboutUs/AboutUsHelpers/OurStory.jsx"
-export { AchivementContainer, AchivementCard } from "../pages/AboutUs/AboutUsHelpers/AchivementsCard.jsx";
-export { EmployeeContainer , Employee } from "../pages/AboutUs/AboutUsHelpers/EmployeeContainer.jsx"
-export { ServiceContainer, Service} from "../pages/AboutUs/AboutUsHelpers/ServiceContainer.jsx"
+export { OurStory } from "../pages/AboutUs/AboutUsHelpers/OurStory.jsx"
+export * from "../pages/AboutUs/AboutUsHelpers/AchivementsCard.jsx";
+export * from "../pages/AboutUs/AboutUsHelpers/EmployeeContainer.jsx"
+export * from "../pages/AboutUs/AboutUsHelpers/ServiceContainer.jsx"

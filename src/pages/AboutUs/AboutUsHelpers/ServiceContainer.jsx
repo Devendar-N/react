@@ -4,7 +4,7 @@ import {
     Guarantee
 } from "@images/index.js";
 
-import "../styles/ServiceContainer.css";
+import "../styles/Employee.css";
 
 export const ServiceContainer = () => {
   return (

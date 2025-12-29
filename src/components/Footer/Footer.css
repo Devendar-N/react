@@ -9,10 +9,12 @@
  }
 
  .footer-content-container {
+    width: 100%;
      margin-top: 75px;
      height: 260px;
      display: flex;
      flex-direction: row;
+     justify-content: space-around;
      align-items: baseline;
      gap: 86px;
  }

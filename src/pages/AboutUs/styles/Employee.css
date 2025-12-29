@@ -1,5 +1,5 @@
 .employee-container {
-     margin-top: 100px;
+     margin-top: 150px;
      margin-left: 60px;
      width: auto;
      height: 564px;
@@ -82,9 +82,69 @@
      gap: 16px;
  }
 
+ .service-container {
+    margin-top: 80px;
+     width: auto;
+     height: 250px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     gap: 88px;
+ }
+ 
+ .service{
+     width: 260px;
+     height: 161px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 24px;
+ }
+
+ .service-image {
+     width: 80px;
+     height: 80px;
+ }
+
+ .service-content-container{
+     width: 260px;
+     height: 57px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 8px;
+ }
+
+ .service-title {
+     height: 28px;
+     font-family: 'Poppins';
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 28px;
+     
+     color: #000;
+ }
+
+ .service-content {
+     width: 249px;
+     height: 21px;
+     font-family: 'Poppins';
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 21px;
+     
+     display: flex;
+     justify-content: center;
+     color: #000;
+ }
+
   @media screen and (min-width: 1024px) and (max-width: 1920px) {
     .employee-container {
-         justify-content: center;
+        margin-left: 135px;
+         justify-content: space-between;
          gap: 0px;
      }
 }
@@ -110,6 +170,11 @@
         align-items: center;
         flex: 0 0 100%;
      }
+
+    .service-container{
+        height: 410px;
+        flex-wrap: wrap;
+     }
 }
 
  @media screen and (max-width: 767px) {
@@ -124,5 +189,10 @@
      .employee{
         flex: 0 0 100%;
         align-items: flex-start;
+     }
+
+    .service-container{
+        flex-direction: column;
+        height: auto;
      }
  }

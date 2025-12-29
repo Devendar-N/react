@@ -6,7 +6,7 @@ import {
     MoneyBagIcon
 } from "@images/index";
 
-
+//Achivement card
 export const AchivementCard = ({
   icon,
   achivementCount,
@@ -33,6 +33,8 @@ export const AchivementCard = ({
 export const AchivementContainer = () => {
   return (
     <div className="achivement-container">
+
+      {/* accessing achivement card */}
       <AchivementCard icon={ShopIcon} achivementCount="10.5k" achivementText="Sallers active our site" />
       <AchivementCard icon={SalseIcon} achivementCount="33k" achivementText="Monthly Product Sale" />
       <AchivementCard icon={ShoppingIcon} achivementCount="25k" achivementText="Annual gross sale in our site" />

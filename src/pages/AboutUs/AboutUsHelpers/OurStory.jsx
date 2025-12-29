@@ -1,6 +1,8 @@
 import { AboutUsImage } from '@images/index.js';
 import "../styles/OurStory.css";
-const OurStory = () => {
+
+
+export const OurStory = () => {
     return (
         <div className='about-us'>
             <div className="about-us-text">
@@ -18,5 +20,3 @@ const OurStory = () => {
         </div>
     )
 }
-
-export default OurStory
