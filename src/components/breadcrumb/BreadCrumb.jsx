@@ -8,7 +8,7 @@ const Breadcrumbs = () => {
   const formatText = (segment) =>
     decodeURIComponent(segment)
       .replace(/-/g, " ")
-      .replace(/\b\w/g, (c) => c.toUpperCase());
+      .replace(/\b\w/g, (content) => content.toUpperCase());
 
   if (pathname === "/") return null;
 

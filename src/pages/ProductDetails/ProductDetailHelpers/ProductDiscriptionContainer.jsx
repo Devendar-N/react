@@ -1,11 +1,13 @@
 import { Star,Return, Delivery } from "@images/index.js";
-import { IoAdd, IoRemove, IoHeartOutline } from "react-icons/io5";
+import { IoHeartOutline } from "react-icons/io5";
 import { useState } from "react";
 
 import "../styles/ProductDetailsAndImages.css";
 
 export const ProductDiscription = () => {
   return (
+
+    // product details
     <div className="product-details">
       <div className="product-name">Havic HV G-92 Gamepad</div>
       <div className="product-reviews">
@@ -39,19 +41,19 @@ export const ProductDiscription = () => {
   );
 };
 
-export const ProductSize = () => {
+export const ProductColour = () => {
+
+  //shows the selected colour of the product
   const [count, setCount] = useState(0);
   const [selectedColour, setselectedColour] = useState(null);
 
-  function chooseColour(){
-    setChoose(!colour);
-  }
-
   return (
-    <div className="product-colour">
+    <div className="product-specification">
       <div className="product-available-colours">
         <div className="colour-text">Colours:</div>
         <div className="product-change-colour">
+
+          {/* using ternary to activate the border around selected colour */}
           <button className ={` product-colour-blue ${selectedColour === "blue" ? "activate-colour" : ""}`} onClick={() => setselectedColour("blue")}></button>
           <button className ={` product-colour-red ${selectedColour === "red" ? "activate-colour" : ""}`} onClick={() => setselectedColour("red")}></button>
         </div>
@@ -79,6 +81,8 @@ export const ProductSize = () => {
     </div>
   );
 };
+
+
 export const ProductReturn = () => {
   return (
     <div className="delivery-and-return-details">
@@ -109,7 +113,7 @@ const ProductDiscriptionContainer = () => {
   return (
     <div className="product-discription-container">
       <ProductDiscription />
-      <ProductSize />
+      <ProductColour />
       <ProductReturn/>
     </div>
   );

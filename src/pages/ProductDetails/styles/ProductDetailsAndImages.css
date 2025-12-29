@@ -128,7 +128,7 @@
    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
  }
 
- .product-colour {
+ .product-specification {
    width: auto;
    height: auto;
    display: flex;
@@ -237,6 +237,7 @@
  }
 
  .buy-now-button {
+  cursor: pointer;
    width: 165px;
    height: 44px;
    border-radius: 4px;
@@ -374,7 +375,7 @@
      height: auto;
    }
 
-   .product-colour {
+   .product-specification {
      width: auto;
      height: auto;
      display: flex;
@@ -442,7 +443,7 @@
      height: auto;
    }
 
-   .product-colour {
+   .product-specification {
      width: auto;
      height: auto;
      display: flex;

@@ -1,4 +1,6 @@
-import "../styles/ProductDetailsAndImages.css";
+import "../styles/ProductDetailsAndImages.css"; //stylesheet
+
+//import images
 import {
   ProductWithKit,
   ProductFrontView,
@@ -7,17 +9,14 @@ import {
   ProductMainImage
 } from "@images/index.js"
 
+//Creating Image card
 export const ImageCard = ({ imageSrc, imageAlt }) => (
   <div className="image-container">
     <img src={imageSrc} alt={imageAlt} />
   </div>
 );
 
-export const MainImage = () => (
-  <div className="main-image-container">
-    <img src={ProductMainImage} alt="Product-Image" />
-  </div>
-);
+// Using Image card
 export function ProductImages() {
   return (
     <div className="product-images">
@@ -28,3 +27,10 @@ export function ProductImages() {
     </div>
   )
 }
+
+//Main image
+export const MainImage = () => (
+  <div className="main-image-container">
+    <img src={ProductMainImage} alt="Product-Image" />
+  </div>
+);

@@ -6,6 +6,7 @@ import {
 
 import "../styles/ProductDetailsAndImages.css";
 
+//Product images and discription component
 const ProductDetailsAndImages = () => {
   return (
     <div className="product-images-and-details">

@@ -8,6 +8,59 @@ import {
   Cooler,
   YellowStar
 } from "@images/index.js";
+
+
+//suggested product imagecard
+export const SuggestedProducts = ({
+  offerPrice,
+  productImage,
+  heartIcon,
+  viewIcon
+}) => {
+  return (
+    <div className="related-product-details">
+      {offerPrice && (<div className="related-product-offer">{offerPrice}</div>)}
+      <div className="related-product-image"><img src={productImage} alt="product-image" /></div>
+      <div className="related-product-icons">
+        <button type="button" className="heart"><img src={heartIcon} alt="heart" /></button>
+        <button type="button" className="eye"><img src={viewIcon} alt="view" /></button>
+      </div>
+      <button type="button" className="add-to-cart">Add To Cart</button>
+    </div>
+  )
+}
+
+
+//suggested product details
+export const SuggestedProductDetails = ({
+  productName,
+  offerPrice,
+  originalPrice,
+  star,
+  reviewCount
+}) => {
+  return (
+    <div className="related-product-price-details">
+      <div className="related-product-name">{productName}</div>
+      <div className="related-product-price">
+        <div className="related-product-offer-price">{offerPrice}</div>
+        <div className="related-product-original-price">{originalPrice}</div>
+      </div>
+      <div className="related-product-reviews-count">
+        <div className="related-product-star">
+          <div><img src={star} alt="star" /></div>
+          <div><img src={star} alt="star" /></div>
+          <div><img src={star} alt="star" /></div>
+          <div><img src={star} alt="star" /></div>
+          <div><img src={star} alt="star" /></div>
+        </div>
+        <div className="related-product-review-count"> {reviewCount} </div>
+      </div>
+    </div>
+  )
+}
+
+
 export const RelatedProduct = () => {
   return (
     <div className="product-suggestion">
@@ -32,53 +85,6 @@ export const RelatedProduct = () => {
           <SuggestedProducts productImage={Cooler} heartIcon={Heart} viewIcon={Eye} />
           <SuggestedProductDetails productName="RGB liquid CPU Cooler" offerPrice="$160" originalPrice="$170" star={YellowStar} reviewCount="(65)" />
         </div>
-      </div>
-    </div>
-  )
-}
-
-export const SuggestedProducts = ({
-  offerPrice,
-  productImage,
-  heartIcon,
-  viewIcon
-}) => {
-  return (
-    <div className="related-product-details">
-      {offerPrice && (<div className="related-product-offer">{offerPrice}</div>)}
-      <div className="related-product-image"><img src={productImage} alt="product-image" /></div>
-      <div className="related-product-icons">
-        <button type="button" className="heart"><img src={heartIcon} alt="heart" /></button>
-        <button type="button" className="eye"><img src={viewIcon} alt="view" /></button>
-      </div>
-      <button type="button" className="add-to-cart">Add To Cart</button>
-    </div>
-  )
-}
-
-export const SuggestedProductDetails = ({
-  productName,
-  offerPrice,
-  originalPrice,
-  star,
-  reviewCount
-}) => {
-  return (
-    <div className="related-product-price-details">
-      <div className="related-product-name">{productName}</div>
-      <div className="related-product-price">
-        <div className="related-product-offer-price">{offerPrice}</div>
-        <div className="related-product-original-price">{originalPrice}</div>
-      </div>
-      <div className="related-product-reviews-count">
-        <div className="related-product-star">
-          <div><img src={star} alt="star" /></div>
-          <div><img src={star} alt="star" /></div>
-          <div><img src={star} alt="star" /></div>
-          <div><img src={star} alt="star" /></div>
-          <div><img src={star} alt="star" /></div>
-        </div>
-        <div className="related-product-review-count"> {reviewCount} </div>
       </div>
     </div>
   )
