@@ -53,7 +53,7 @@ export const ProductColour = () => {
         <div className="colour-text">Colours:</div>
         <div className="product-change-colour">
 
-          {/* using ternary to activate the border around selected colour */}
+          {/* using ternary to activate the border around the selected colour */}
           <button className ={` product-colour-blue ${selectedColour === "blue" ? "activate-colour" : ""}`} onClick={() => setselectedColour("blue")}></button>
           <button className ={` product-colour-red ${selectedColour === "red" ? "activate-colour" : ""}`} onClick={() => setselectedColour("red")}></button>
         </div>

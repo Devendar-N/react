@@ -60,7 +60,7 @@ export const SuggestedProductDetails = ({
   )
 }
 
-
+// Accessing the Related product image card and product details card
 export const RelatedProduct = () => {
   return (
     <div className="product-suggestion">
